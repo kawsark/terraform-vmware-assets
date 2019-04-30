@@ -9,9 +9,11 @@ export VSPHERE_SERVER="<vsphere-server-ip>"
 ```
 
 ### Export terraform variables
+# Create a `terraform.tfvars` file with the required variables. Please see `variables.tf` for all variables.
 ```
 cat <<EOF> terraform.tfvars
 project="terraform-demo"
+dc_name="useast-vsphere"
 EOF
 ```
 
