@@ -1,5 +1,6 @@
 # terraform-vmware-assets
-Repo for VMware vSphere provisioning with Terraform
+Repo for VMware vSphere provisioning with Terraform. 
+- This repo uses 2 embedded modules: Tags and VM
 
 ### Export environment variables for VMware vSphere provider
 ```
