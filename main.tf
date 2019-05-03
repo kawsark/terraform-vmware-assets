@@ -18,7 +18,7 @@ data "vsphere_datastore" "datastore" {
 }
 
 data "vsphere_network" "network" {
-  name          = "VM Network"
+  name          = "${var.network_name}"
 #  name = "${module.network.vm_network_name}"
   datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
