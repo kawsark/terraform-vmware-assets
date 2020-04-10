@@ -29,12 +29,12 @@ data "vsphere_resource_pool" "pool" {
 }
 
 module "tags" {
-  source = "modules/tags"
+  source = "./modules/tags"
   project = "${var.project}"
 }
 
 module "vm" {
-  source = "modules/vm"
+  source = "./modules/vm"
   project = "${var.project}"
   network_id = "${data.vsphere_network.network.id}"
   datastore_id = "${data.vsphere_datastore.datastore.id}"
